@@ -28,7 +28,3 @@ Email: *purity2004ngugi@gmail.com*
 | `2-secured_and_monitored_web_infrastructure` | Web Infrastructure Design, based on `1-distributed_web_infrastructure` that contains some additional components: 3 firewalls, 1 SSL certificate, 3 monitoring clients. |
 | `3-scale_up` | Web Infrastructure Design, based on `2-secured_and_monitored_web_infrastructure` that contains some additional components: 1 server, 1 load-balancer. |
 
-
-## Collaborate
-
-To collaborate, reach me through my email address purity2004ngugi@gmail.com.
