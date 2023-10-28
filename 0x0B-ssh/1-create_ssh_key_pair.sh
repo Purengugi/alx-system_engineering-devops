@@ -1,1 +1,1 @@
-chmod +x create_rsa_key.sh
+chmod +x 1-create_rsa_key_pair.sh
