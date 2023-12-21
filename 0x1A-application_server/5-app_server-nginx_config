@@ -48,6 +48,7 @@ server {
 	server_name _;
 
 	location / {
+		proxy_pass http://127.0.0.1:5003/2-hbnb;
 		add_header X-Served-By "405012-web-01";
 		# First attempt to serve request as file, then
 		# as directory, then fall back to displaying a 404.
@@ -61,6 +62,12 @@ server {
 	}
 	location ~ /airbnb-dynamic/number_odd_or_even/(\d+)$ {
    	 	proxy_pass http://127.0.0.1:5001/number_odd_or_even/$1;
+	}
+	location /api/ {
+		proxy_pass http://127.0.0.1:5002/api;
+	}
+	location /static/ {
+		alias /AirBnB_clone_v4/web_dynamic/static/;
 	}
 
 	# pass PHP scripts to FastCGI server
